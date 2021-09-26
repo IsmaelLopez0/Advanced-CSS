@@ -79,3 +79,8 @@ h2::before {
 h2::after {
   content: " Grooth";
 }
+
+a {
+  background-color: white;
+  padding: 0 30px;
+}
