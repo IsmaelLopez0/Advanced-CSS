@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/* selector de etiqueta */
+body {
+  background-color: red;
+}
+/* selector de clase */
+.container {
+  background-color: green;
+}
+/* selector de id */
+#p1 {
+  background-color: gren;
+}
+/* selector de pseudoclase */
+input:checked  {
+}
+/* selector de descendiente */
+.container p {
+  color: pink;
+}
+/* selector de descendiente directo */
+.container > p {
+  color: black;
+}
+
+/* selector de hermano adyacente */
+.container p + p {
+  margin-top: 15px;
+}
+
+/* selector hermanos adyacentes */
+.container p ~ div {
+  background-color: yellow;
+}
+
+/* selector de atributo */
+input[name="txt1"] {
+  background-color: blueviolet;
+}
+
+/* comodines * case sensitive
+  ^ empieza con -> input[name^="t"]
+  * contiene -> input[name*="xt"]
+  $ termina en -> input[name$="t1"]  
+*/
+
+.container p:first-child {
+  height: 30px;
+}
+
+.container p:last-child {
+  height: 50px;
+}
+
+.container p:nth-child(-n + 3) {
+  background-color: red;
+}
+
+.container p:last-of-type {
+  background-color: cornflowerblue;
+}
+
+/*
+  pseudo elementos
+  ::before
+  ::after
+*/
+
+h2::before {
+  content: "Yo ";
+  color: yellow;
+}
+
+h2::after {
+  content: " Grooth";
+}

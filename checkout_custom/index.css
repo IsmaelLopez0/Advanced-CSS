@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+div {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  display: none;
+}
+
+label {
+  position: relative;
+}
+
+label::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 100%;
+}
+
+input:checked + label::before {
+  background-color: blue;
+}
